@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public abstract class Contenido
    {
-      public string nombre;
+      private string nombre;
 
       public Contenido (string nombre)
       {

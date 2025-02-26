@@ -7,7 +7,7 @@ namespace EntidadesCs
    public class Ticket
    {
       public Persona Persona { get; set; }
-      public decimal monto;
+      private decimal monto;
 
       public Ticket (Persona persona, decimal monto)
       {

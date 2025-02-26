@@ -6,8 +6,8 @@ namespace EntidadesCs
    {
       // lista movimientos
 
-      public string dni;
-      public string nombre;
+      private string dni;
+      private string nombre;
 
       public Persona(string dni, string nombre)
       {

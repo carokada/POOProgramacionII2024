@@ -32,7 +32,6 @@ namespace EntidadesCs
          Destino = destino;
       }
 
-
       public override string ToString()
       {
          return $" pasaje: {Descripcion} desde {Origen} hasta {Destino} el dia {FechaInicial} \n cantidad: {Asientos} \t\t precio: {PrecioUnitario}";

@@ -7,9 +7,9 @@ namespace EntidadesCs
    public class ClientePasajero : Cliente, IPasajero
    {
       // IPasajero
-      public uint Pasaporte { get; private set; }
-      public uint Dni { get; private set; }
-      public DateTime FechaNacimiento { get; private set; }
+      public uint Pasaporte { get; set; }
+      public uint Dni { get; set; }
+      public DateTime FechaNacimiento { get; set; }
 
       public ClientePasajero (string cuitCuil, uint dni, string nombre, string domicilio, DateTime fechaNacimiento) : base(cuitCuil, nombre, domicilio)
       {
@@ -17,10 +17,8 @@ namespace EntidadesCs
          FechaNacimiento = fechaNacimiento;
       }
 
-      public ClientePasajero (string cuitCuil, uint dni, string nombre, string domicilio, DateTime fechaNacimiento, uint pasaporte) : base(cuitCuil, nombre, domicilio)
+      public ClientePasajero (string cuitCuil, uint dni, string nombre, string domicilio, DateTime fechaNacimiento, uint pasaporte) : this (cuitCuil, dni, nombre, domicilio, fechaNacimiento)
       {
-         Dni = dni;
-         FechaNacimiento = fechaNacimiento;
          Pasaporte = pasaporte;
       }
 

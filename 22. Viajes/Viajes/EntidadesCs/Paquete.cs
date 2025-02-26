@@ -7,7 +7,7 @@ namespace EntidadesCs
    public class Paquete : IServicio, ICotizacion
    {
       // IServicio
-      public decimal PrecioPesos { get => Venta.CotizacionDolarPesos * PrecioDolar; }
+      public decimal PrecioPesos { get => PrecioDolar * Venta.CotizacionDolarPesos; }
       public decimal PrecioDolar { get => CalcularSumatoria(); }
 
       // ICotizacion
@@ -17,9 +17,9 @@ namespace EntidadesCs
       // asoc (multiple) Iservicio toma tanto hotel como pasaje como paquete
       private List<IServicio> servicios;
 
-      private DateTime FechaFinal { get; set; }
-      private ushort NumeroDias { get; set; }
-      private ushort NumeroPasajeros { get; set; }
+      public DateTime FechaFinal { get; set; }
+      public ushort NumeroDias { get; set; }
+      public ushort NumeroPasajeros { get; set; }
       // precio = Sumatoria(precio) ?? campo precio final ?
 
       public Paquete (string descripcion, DateTime fechaInicial, DateTime fechaFinal)
@@ -55,7 +55,7 @@ namespace EntidadesCs
          int total = 0;
          foreach (var servicio in servicios)
          {
-            total += servicio.precio;
+            // total += servicio;  // casting a icotizacion aca ??  
          }
          return total;
       }

@@ -6,9 +6,9 @@ namespace EntidadesCs
 {
    public class Jugador : Persona
    {
-      public byte numero;
+      private byte numero;
 
-      public Equipo equipoActual;
+      private Equipo equipoActual;
 
       public Jugador(string nombre, DateTime fechaNacimiento, byte numero) : base(nombre, fechaNacimiento)
       {

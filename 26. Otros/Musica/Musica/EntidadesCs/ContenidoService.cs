@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public class ContenidoService
    {
-      public List<Contenido> contenidos = new List<Contenido>();
+      private List<Contenido> contenidos = new List<Contenido>();
 
       // BuscarPorNombre
 

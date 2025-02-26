@@ -7,8 +7,8 @@ namespace EntidadesCs
    public class Cancion : Contenido, ITemporizable
    {
       public int Duracion { get; }
-      public Interprete artista;
-      public Album album;
+      private Interprete artista;
+      private Album album;
 
       public Cancion (string nombre, Interprete artista, Album album, int duracion) : base(nombre)
       {

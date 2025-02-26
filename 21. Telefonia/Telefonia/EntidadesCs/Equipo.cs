@@ -6,8 +6,8 @@ namespace EntidadesCs
 {
    public class Equipo
    {
-      public Modelo modelo;
-      public string serie;
+      private Modelo modelo;
+      private string serie;
       public DateTime FechaVenta { get; private set; }
 
       public Equipo (Modelo modelo, string serie)

@@ -9,8 +9,8 @@ namespace EntidadesCs
       private List<Paquete> paquetes;
       private decimal montoTotal;
 
-      public DateTime fecha;
-      public Cliente cliente;
+      private DateTime fecha;
+      private Cliente cliente;
 
       public Venta (Cliente cliente, DateTime fecha)
       {
@@ -31,7 +31,7 @@ namespace EntidadesCs
          if (paquetes.Contains(paquete))
             throw new ArgumentException(" el paquete ya se encuentra en la venta.");
          paquetes.Add(paquete);
-         montoTotal += paquete.montoTotal;
+         montoTotal += paquete.MontoTotal();
       }
 
       public List<Paquete> GetPaquetes()
@@ -44,7 +44,7 @@ namespace EntidadesCs
          if (!paquetes.Contains(paquete))
             throw new ArgumentException(" el paquete no se encuentra en la venta.");
          paquetes.Remove(paquete);
-         montoTotal -= paquete.montoTotal;
+         montoTotal -= paquete.MontoTotal();
       }
 
       public decimal MontoTotal()
@@ -58,7 +58,7 @@ namespace EntidadesCs
          {
             foreach (var ticket in paquete.GetTickets())
             {
-               if (ticket.Persona.dni == cliente.Dni)
+               if (ticket.Persona.Dni == cliente.Dni)
                {
                   return true;
                }

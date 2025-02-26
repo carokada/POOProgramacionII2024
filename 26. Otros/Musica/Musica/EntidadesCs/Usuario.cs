@@ -4,10 +4,10 @@ namespace EntidadesCs
 {
    public class Usuario
    {
-      public Biblioteca biblioteca;
+      private Biblioteca biblioteca;
 
-      public string nombre;
-      public string email;
+      private string nombre;
+      private string email;
 
       public Usuario (string nombre, string email)
       {

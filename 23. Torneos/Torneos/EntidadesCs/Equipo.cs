@@ -5,9 +5,9 @@ namespace EntidadesCs
 {
    public class Equipo
    {
-      public string nombre;
+      private string nombre;
 
-      public List<Persona> jugadores;
+      private List<Persona> jugadores;
 
       public Equipo ()
       {

@@ -4,7 +4,7 @@ namespace EntidadesCs
 {
    public abstract class Ente
    {
-      public string nombre;
+      private string nombre;
 
       public Ente (string nombre)
       {

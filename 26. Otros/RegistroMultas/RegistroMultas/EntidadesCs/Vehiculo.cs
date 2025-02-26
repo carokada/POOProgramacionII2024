@@ -9,8 +9,8 @@ namespace EntidadesCs
       private List<Multa> multas;
       private decimal totalMultas = 0;
 
-      public string patente;
-      public Propietario propietario;
+      private string patente;
+      private Propietario propietario;
 
       public Vehiculo (string patente)
       {

@@ -17,9 +17,9 @@ namespace EntidadesCs
       public DateTime Fecha { get; set; }
       public byte GolesLocales { get; private set; }
       public byte GolesVisitantes { get; private set; }
-      public List<byte> minutosGolesLocales;
-      public List<byte> minutosGolesVisitantes;
-      public bool finPartido;
+      private List<byte> minutosGolesLocales;
+      private List<byte> minutosGolesVisitantes;
+      private bool finPartido;
 
       public Partido(byte jornada, DateTime fecha, Equipo equipoLocal, Equipo equipoVisitante, Referee arbitro)
       {

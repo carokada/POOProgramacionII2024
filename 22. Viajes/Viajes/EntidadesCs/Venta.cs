@@ -8,7 +8,7 @@ namespace EntidadesCs
    {
       // ICotizacion
       public decimal PrecioPesos { get => PrecioDolar * CotizacionDolarPesos; } // en otras clases se llama a Venta.CotizacionDolarPesos
-      public decimal PrecioDolar { get; set; }
+      public static decimal PrecioDolar { get; }
 
       // Iservicio
       public string Descripcion { get; set; }

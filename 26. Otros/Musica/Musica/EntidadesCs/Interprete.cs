@@ -47,7 +47,7 @@ namespace EntidadesCs
          if (canciones.Contains(cancion))
             throw new ArgumentException($" la cancion {cancion} ya ha sido agregada al interprete.");
          canciones.Add(cancion);
-         if (!albums.Contains(cancion.album))
+         if (!albums.Contains(cancion.Album))
             albums.Add(cancion.Album);
       }
 

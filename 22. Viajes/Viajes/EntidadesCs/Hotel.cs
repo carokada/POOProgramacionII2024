@@ -5,13 +5,13 @@ namespace EntidadesCs
    public class Hotel : IServicio, ICotizacion
    {
       // IServicio
-      public string descripcion { get; private set; } // deberian estar en mayusculas ?
-      public DateTime fechaInicial { get; private set; }
+      public string Descripcion { get; set; } // deberian estar en mayusculas ?
+      public DateTime FechaInicial { get; set; }
 
       // ICotizacion
-      public decimal PrecioPesos { get; private set; }
-      public decimal PrecioDolar { get; private set; }
-      
+      public decimal PrecioPesos { get => PrecioDolar * Venta.CotizacionDolarPesos; }
+      public decimal PrecioDolar { get => PrecioDiaria * Noches * Habitaciones; }
+
       // asoc ciudad
       public Ciudad Ciudad { get; set; }
 
@@ -22,8 +22,8 @@ namespace EntidadesCs
 
       public Hotel (string descripcion, DateTime fecha, Ciudad ciudad, byte noches, decimal precioDiaria)
       {
-         this.descripcion = descripcion;
-         this.fechaInicial = fecha;
+         Descripcion = descripcion;
+         FechaInicial = fecha;
          Ciudad = ciudad;
          Noches = noches;
          PrecioDiaria = precioDiaria;
@@ -31,7 +31,7 @@ namespace EntidadesCs
 
       public override string ToString()
       {
-         return $" hotel: {descripcion} en {Ciudad} ({fechaInicial}) \n precio por noche: {PrecioDiaria}";
+         return $" hotel: {Descripcion} en {Ciudad} ({FechaInicial.ToString("dd/MM/yy")}) \n precio por noche: {PrecioDiaria}";
       }
    }
 }

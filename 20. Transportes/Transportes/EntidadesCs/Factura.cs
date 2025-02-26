@@ -7,9 +7,9 @@ namespace EntidadesCs
    public class Factura
    {
       private List<Pasaje> pasajes; // asoc pasaje (1 a muchos)
-      public Cliente cliente; // asoc cliente (1 a 1)
+      private Cliente cliente; // asoc cliente (1 a 1)
 
-      public DateTime fecha;
+      private DateTime fecha;
 
       public Factura (DateTime fecha, Cliente cliente)
       {
@@ -24,7 +24,11 @@ namespace EntidadesCs
       public Cliente Cliente
       {
          get => cliente;
-         set => cliente = value ?? throw new ArgumentException(" el cliente no puede ser nulo."); // falta la invocacion a AddFactura de cliente
+         set
+         {
+            cliente = value ?? throw new ArgumentException(" el cliente no puede ser nulo.");
+            Cliente.AddFactura(this); // invocacion a AddFactura de cliente
+         } 
       }
 
       public DateTime Fecha

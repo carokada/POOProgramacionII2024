@@ -6,8 +6,8 @@ namespace EntidadesCs
 {
    public abstract class Entidad
    {
-      public string nombre; // string 30
-      public string domicilio; // string 50
+      private string nombre; // string 30
+      private string domicilio; // string 50
 
       public Entidad (string nombre, string domicilio)
       {

@@ -7,7 +7,7 @@ namespace EntidadesCs
    public class Personaje : Ente
    {
       public decimal Sueldo { get; set; }
-      public Actor actor;
+      private Actor actor;
 
       public Personaje (string nombre, Actor actor, decimal sueldo) : base(nombre)
       {

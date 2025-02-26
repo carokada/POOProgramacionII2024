@@ -7,6 +7,6 @@ namespace EntidadesCs
    public interface ICotizacion
    {
       decimal PrecioPesos { get; }
-      decimal PrecioDolar { get; } // no es readonly. 
+      decimal PrecioDolar { get; }
    }
 }

@@ -7,8 +7,8 @@ namespace EntidadesCs
    public class Equipaje
    {
       public byte pesoKilos { get; set; } = 1;
-      public Pasaje pasaje;
-      public decimal monto;
+      private Pasaje pasaje;
+      public decimal Monto { get; set; }
 
       public Equipaje(Pasaje pasaje)
       {

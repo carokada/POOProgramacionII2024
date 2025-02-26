@@ -65,13 +65,13 @@ namespace DemoCs
 
          Console.WriteLine(divisor);
          Console.WriteLine(" creando pasajes...");
-         Pasaje pasaje1 = new Pasaje(new DateTime(2025, 3, 10), (Pasajero)pasajero1, ciudad4, ciudad1);
-         Pasaje pasaje2 = new Pasaje(new DateTime(2025, 3, 15), (Pasajero)pasajero1, ciudad1, ciudad4);
-         Pasaje pasaje3 = new Pasaje(new DateTime(2025, 2, 28), (Pasajero)pasajero3, ciudad5, ciudad2);
-         Pasaje pasaje4 = new Pasaje(new DateTime(2025, 3, 15), (Pasajero)pasajero3, ciudad2, ciudad5);
-         Pasaje pasaje5 = new Pasaje(new DateTime(2025, 3, 3), (Pasajero)pasajero2, ciudad1, ciudad3);
-         Pasaje pasaje6 = new Pasaje(new DateTime(2025, 3, 9), (Pasajero)pasajero2, ciudad3, ciudad4);
-         Pasaje pasaje7 = new Pasaje(new DateTime(2025, 3, 14), (Pasajero)pasajero2, ciudad4, ciudad1);
+         Pasaje pasaje1 = new Pasaje(new DateTime(2025, 3, 10), pasajero1, ciudad4, ciudad1);
+         Pasaje pasaje2 = new Pasaje(new DateTime(2025, 3, 15), pasajero1, ciudad1, ciudad4);
+         Pasaje pasaje3 = new Pasaje(new DateTime(2025, 2, 28), pasajero3, ciudad5, ciudad2);
+         Pasaje pasaje4 = new Pasaje(new DateTime(2025, 3, 15), pasajero3, ciudad2, ciudad5);
+         Pasaje pasaje5 = new Pasaje(new DateTime(2025, 3, 3), pasajero2, ciudad1, ciudad3);
+         Pasaje pasaje6 = new Pasaje(new DateTime(2025, 3, 9), pasajero2, ciudad3, ciudad4);
+         Pasaje pasaje7 = new Pasaje(new DateTime(2025, 3, 14), pasajero2, ciudad4, ciudad1);
 
          Console.WriteLine(" asignando montos...");
          pasaje1.Monto = 500;
@@ -85,13 +85,13 @@ namespace DemoCs
          // equipaje ?? aclarar lo del pesoKg y el 10%, se puede o no se puede setear el peso ?
 
          Console.WriteLine("\n pasajes cargados:");
-         Console.WriteLine(pasaje1 + $" ${pasaje1.monto} + IVA (${pasaje1.CalcularIva()})");
-         Console.WriteLine(pasaje2 + $" ${pasaje2.monto} + IVA (${pasaje2.CalcularIva()})");
-         Console.WriteLine(pasaje3 + $" ${pasaje3.monto} + IVA (${pasaje3.CalcularIva()})");
-         Console.WriteLine(pasaje4 + $" ${pasaje4.monto} + IVA (${pasaje4.CalcularIva()})");
-         Console.WriteLine(pasaje5 + $" ${pasaje5.monto} + IVA (${pasaje5.CalcularIva()})");
-         Console.WriteLine(pasaje6 + $" ${pasaje6.monto} + IVA (${pasaje6.CalcularIva()})");
-         Console.WriteLine(pasaje7 + $" ${pasaje7.monto} + IVA (${pasaje7.CalcularIva()})");
+         Console.WriteLine(pasaje1 + $" ${pasaje1.Monto} + IVA (${pasaje1.CalcularIva()})");
+         Console.WriteLine(pasaje2 + $" ${pasaje2.Monto} + IVA (${pasaje2.CalcularIva()})");
+         Console.WriteLine(pasaje3 + $" ${pasaje3.Monto} + IVA (${pasaje3.CalcularIva()})");
+         Console.WriteLine(pasaje4 + $" ${pasaje4.Monto} + IVA (${pasaje4.CalcularIva()})");
+         Console.WriteLine(pasaje5 + $" ${pasaje5.Monto} + IVA (${pasaje5.CalcularIva()})");
+         Console.WriteLine(pasaje6 + $" ${pasaje6.Monto} + IVA (${pasaje6.CalcularIva()})");
+         Console.WriteLine(pasaje7 + $" ${pasaje7.Monto} + IVA (${pasaje7.CalcularIva()})");
 
          Console.WriteLine(divisor);
          Console.WriteLine(" creando facturas... ");
@@ -99,13 +99,13 @@ namespace DemoCs
          Factura factura2 = new Factura(DateTime.Now, (Cliente)cliente2);
 
          Console.WriteLine(" cargando pasajes en facturas...");
-         factura1.AddPasaje((Pasaje)pasaje5);
-         factura1.AddPasaje((Pasaje)pasaje6);
-         factura1.AddPasaje((Pasaje)pasaje7);
-         factura2.AddPasaje((Pasaje)pasaje1);
-         factura2.AddPasaje((Pasaje)pasaje2);
-         factura2.AddPasaje((Pasaje)pasaje3);
-         factura2.AddPasaje((Pasaje)pasaje4);
+         factura1.AddPasaje(pasaje5);
+         factura1.AddPasaje(pasaje6);
+         factura1.AddPasaje(pasaje7);
+         factura2.AddPasaje(pasaje1);
+         factura2.AddPasaje(pasaje2);
+         factura2.AddPasaje(pasaje3);
+         factura2.AddPasaje(pasaje4);
 
          Console.WriteLine("\n facturas cargadas:");
          Console.WriteLine(factura1);
@@ -116,9 +116,21 @@ namespace DemoCs
          MostrarPasajes(factura2);
 
          Console.WriteLine("\n mostrando pasajes por pasajero:");
-         MostrarPasajes((Pasajero)pasajero1);
-         MostrarPasajes((Pasajero)pasajero2);
-         MostrarPasajes((Pasajero)pasajero3);
+         MostrarPasajes(pasajero1);
+         MostrarPasajes(pasajero2);
+         MostrarPasajes(pasajero3);
+
+         // fallos en la respuesta de la clase de utilidad. no aparecen facturas por fecha
+         Console.WriteLine(divisor);
+         Console.WriteLine(" clase de utilidad Agencia:");
+         Console.WriteLine(" facturas por fecha:");
+         MostrarFacturasPorFecha(new DateTime(2025, 3, 15));
+
+         Console.WriteLine("\n pasajeros por destino y fecha");
+         MostrarPasajerosPorDestinoYFecha(ciudad1, new DateTime(2025, 3, 15));
+
+         Console.WriteLine("\n movimientos por persona");
+         MostrarMovimientosPorPersona(pasajero2);
 
          //Console.WriteLine("");
          //Console.WriteLine();
@@ -140,6 +152,30 @@ namespace DemoCs
          Console.WriteLine($" pasajes de {pasajero.Nombre}");
          foreach (var pasaje in pasajero.GetAllPasajes())
             Console.WriteLine($" - {pasaje}");
+         Console.WriteLine();
+      }
+
+      private static void MostrarFacturasPorFecha(DateTime fecha)
+      {
+         Console.WriteLine($" facturas por fecha: {fecha.ToString("dd/MM/yy")}");
+         foreach (var factura in Agencia.GetAllFacturasByFecha(fecha))
+            Console.WriteLine($" - {factura}");
+         Console.WriteLine();
+      }
+
+      private static void MostrarPasajerosPorDestinoYFecha(Ciudad destino, DateTime fecha)
+      {
+         Console.WriteLine($" pasajeros por destino ({destino}) y fecha: {fecha.ToString("dd/MM/yy")}");
+         foreach (var pasajero in Agencia.GetPasajerosByDestinoAndFecha(destino, fecha))
+            Console.WriteLine($" - {pasajero}");
+         Console.WriteLine();
+      }
+
+      private static void MostrarMovimientosPorPersona(Persona persona)
+      {
+         Console.WriteLine($" movimientos por persona ({persona})");
+         foreach (var movimiento in Agencia.GetMovimientosByPersona(persona))
+            Console.WriteLine($" - {movimiento}");
          Console.WriteLine();
       }
    }

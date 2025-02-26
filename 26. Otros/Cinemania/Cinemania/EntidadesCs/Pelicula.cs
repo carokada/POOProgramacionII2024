@@ -8,11 +8,11 @@ namespace EntidadesCs
    {
       public ushort Anio { get; set; }
 
-      public List<Personaje> personajes;
-      public List<string> creditos;
-      public decimal[] topSueldo = { 0, 0, 0};
-      public string[] topSueldoNombres = { "", "", ""};
-      public List<Personaje> topSueldos;
+      private List<Personaje> personajes;
+      private List<string> creditos;
+      private decimal[] topSueldo = { 0, 0, 0};
+      private string[] topSueldoNombres = { "", "", ""};
+      private List<Personaje> topSueldos;
 
       public Pelicula (string nombre, ushort anio) : base(nombre)
       {

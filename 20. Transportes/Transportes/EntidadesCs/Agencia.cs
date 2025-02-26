@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EntidadesCs
 {
-   class Agencia
+   public static class Agencia
    {
       private static List<Factura> facturas = new List<Factura>(); // 
 
@@ -31,7 +31,7 @@ namespace EntidadesCs
       //   facturas.Remove(factura);
       //}
 
-      public List<Factura> GetAllFacturasByFecha(DateTime fecha)
+      public static List<Factura> GetAllFacturasByFecha(DateTime fecha)
       {
          List<Factura> facturasPorFecha = new List<Factura>();
 
@@ -45,7 +45,7 @@ namespace EntidadesCs
             return facturasPorFecha;
       }
 
-      public List<Pasajero> GetPasajerosByDestinoAndFecha(Ciudad destino, DateTime fecha)
+      public static List<Pasajero> GetPasajerosByDestinoAndFecha(Ciudad destino, DateTime fecha)
       {
          List<Pasajero> pasajerosPorDestinoYFecha = new List<Pasajero>();
 
@@ -63,7 +63,7 @@ namespace EntidadesCs
          return pasajerosPorDestinoYFecha;
       }
 
-      public List<Persona> GetMovimientosByPersona(Persona persona)
+      public static List<Persona> GetMovimientosByPersona(Persona persona)
       {
          List<Persona> movimientosPorPersona = new List<Persona>();
 

@@ -4,14 +4,14 @@ using System.Text;
 
 namespace EntidadesCs
 {
-   public class Torneo
+   public static class Torneo
    {
       // asoc persona
-      private List<Persona> personas;
+      private static List<Persona> personas = new List<Persona>();
 
-      public Torneo() { } // si es clase de utilidades no tiene contructor ?
+      // public Torneo() { } // si es clase de utilidades no tiene contructor ?
 
-      public void AddPersona(Persona persona)
+      public static void AddPersona(Persona persona)
       {
          if (persona == null)
             throw new ArgumentException(" la persona no puede ser nula.");
@@ -20,19 +20,19 @@ namespace EntidadesCs
          personas.Add(persona);
       }
 
-      public List<Persona> GetPersonas()
-      {
-         return personas;
-      }
+      //public static List<Persona> GetPersonas()
+      //{
+      //   return personas;
+      //}
 
-      public void RemovePersona(Persona persona)
-      {
-         if (persona == null)
-            throw new ArgumentException(" la persona no puede ser nula.");
-         if (!personas.Contains(persona))
-            throw new ArgumentException($" la persona {persona.Nombre} no esta incluida en el torneo.");
-         personas.Add(persona);
-      }
+      //public static void RemovePersona(Persona persona)
+      //{
+      //   if (persona == null)
+      //      throw new ArgumentException(" la persona no puede ser nula.");
+      //   if (!personas.Contains(persona))
+      //      throw new ArgumentException($" la persona {persona.Nombre} no esta incluida en el torneo.");
+      //   personas.Add(persona);
+      //}
 
       // TotalGolesFavor(Partido partido) -> por local
       // TotalGolesContra(Partido partido) -> por visitante

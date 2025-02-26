@@ -20,11 +20,11 @@ namespace EntidadesCs
          equipajes = new List<Equipaje>();
 
          Fecha = fecha;
-         Pasajero = pasajero;
          Origen = origen;
          Destino = destino;
+         Pasajero = pasajero;
 
-         pasajero.AddPasaje(this); // no deberia estar en constructor sino en atributo pasajero
+         // pasajero.AddPasaje(this); // no deberia estar en constructor sino en atributo pasajero
       }
 
       public DateTime Fecha
@@ -36,7 +36,12 @@ namespace EntidadesCs
       public Pasajero Pasajero
       {
          get => pasajero;
-         set => pasajero = value ?? throw new ArgumentException(" el pasajero no puede ser nulo."); // set completo con el addPAsaje de arriba . le corresponde la responsabilidad del atributo pasajero. se pone la referencia en la propiedad de la asociacion.
+         set
+         {
+            pasajero = value ?? throw new ArgumentException(" el pasajero no puede ser nulo.");
+            pasajero.AddPasaje(this);
+         } 
+         // set completo con el addPAsaje de arriba . le corresponde la responsabilidad del atributo pasajero. se pone la referencia en la propiedad de la asociacion. si el pasaje se borra deberia haber un metodo que elimine el pasaje de la lista del pasajero.
       }
 
       public Ciudad Origen

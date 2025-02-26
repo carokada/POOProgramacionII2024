@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public class Persona : Propietario
    {
-      public string dni;
+      private string dni;
 
       public Persona(string nombre, string dni) : base(nombre)
       {

@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public class Ciudad
    {
-      public string nombre;
+      private string nombre;
 
       public Ciudad(string nombre)
       {

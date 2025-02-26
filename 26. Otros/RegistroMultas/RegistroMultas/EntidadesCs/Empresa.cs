@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public sealed class Empresa : Propietario
    {
-      public string cuit;
+      private string cuit;
 
       public Empresa(string nombre, string cuit) : base(nombre)
       {

@@ -11,7 +11,7 @@ namespace EntidadesCs
 
       private decimal totalMultas;
 
-      public string nombre;
+      private string nombre;
 
       public Propietario(string nombre)
       {

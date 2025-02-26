@@ -6,9 +6,9 @@ namespace EntidadesCs
 {
    public abstract class Persona
    {
-      public DateTime fechaNacimiento;
+      private DateTime fechaNacimiento;
       public ushort Edad { get; private set; }
-      public string nombre;
+      private string nombre;
 
       public Persona ()
       {

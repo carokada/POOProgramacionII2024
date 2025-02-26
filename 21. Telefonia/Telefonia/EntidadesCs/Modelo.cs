@@ -6,8 +6,8 @@ namespace EntidadesCs
 {
    public class Modelo
    {
-      public Marca marca;
-      public string nombre;
+      private Marca marca;
+      private string nombre;
 
       public Modelo(string nombre, Marca marca)
       {

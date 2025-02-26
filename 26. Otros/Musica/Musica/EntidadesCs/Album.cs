@@ -9,7 +9,7 @@ namespace EntidadesCs
       private List<Cancion> canciones;
 
       public int Duracion { get; private set; }
-      public DateTime fechaLanzamiento;
+      private DateTime fechaLanzamiento;
 
       public Album(string nombre, DateTime fecha) : base(nombre)
       {

@@ -7,14 +7,14 @@ namespace EntidadesCs
    public class Paquete
    {
       private List<Ticket> tickets;
-      public decimal montoTotal; // public decimal MontoTotal => montoTotal; propiedad de solo lectura?
+      private decimal montoTotal; // public decimal MontoTotal => montoTotal; propiedad de solo lectura?
 
       private readonly ushort numeroDias;
       private byte numeroTickets = 0;
 
-      public string descripcion;
-      public DateTime fechaInicial;
-      public DateTime fechaFinal;
+      private string descripcion;
+      private DateTime fechaInicial;
+      private DateTime fechaFinal;
 
       public Paquete (string descripcion, DateTime fechaInicial, DateTime fechaFinal)
       {

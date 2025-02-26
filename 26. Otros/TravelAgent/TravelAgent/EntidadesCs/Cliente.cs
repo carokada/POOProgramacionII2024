@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public class Cliente : Persona
    {
-      public string cuit_cuil;
+      private string cuit_cuil;
 
       public Cliente (uint dni, string nombre, string cuit_cuil) : base(dni, nombre)
       {

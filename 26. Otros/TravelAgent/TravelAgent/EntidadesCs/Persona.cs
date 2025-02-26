@@ -4,8 +4,8 @@ namespace EntidadesCs
 {
    public class Persona
    {
-      public uint dni;
-      public string nombre;
+      private uint dni;
+      private string nombre;
 
       public Persona(uint dni, string nombre)
       {

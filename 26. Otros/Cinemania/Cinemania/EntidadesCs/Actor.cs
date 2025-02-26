@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public class Actor : Ente
    {
-      public DateTime fechaNacimiento;
+      private DateTime fechaNacimiento;
 
       public Actor (string nombre, DateTime fechaNacimiento) : base (nombre)
       {

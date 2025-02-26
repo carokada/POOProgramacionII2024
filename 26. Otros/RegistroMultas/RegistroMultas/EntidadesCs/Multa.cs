@@ -6,12 +6,12 @@ namespace EntidadesCs
 {
    public class Multa
    {
-      public Vehiculo vehiculo;
+      private Vehiculo vehiculo;
 
-      public DateTime fecha;
-      public decimal latitud;
-      public decimal longitud;
-      public ushort unidades = 1;
+      private DateTime fecha;
+      private decimal latitud;
+      private decimal longitud;
+      private ushort unidades = 1;
       public decimal MontoUnidad { get; set; }
        
       public Multa (Vehiculo vehiculo, DateTime fecha, decimal latitud, decimal longitud)

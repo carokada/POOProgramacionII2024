@@ -9,7 +9,7 @@ namespace EntidadesCs
       // asoc venta (bidireccional)
       private List<Venta> ventas;
 
-      public string cuitCuil;
+      private string cuitCuil;
 
       public Cliente (string cuitCuil, string nombre, string domicilio) : base (nombre, domicilio)
       {

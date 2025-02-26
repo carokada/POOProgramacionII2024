@@ -4,7 +4,7 @@ namespace EntidadesCs
 {
    public class Linea
    {
-      public Equipo equipo;
+      private Equipo equipo;
       public IPlan Plan { get; set; }
       public Paquete Paquete { get; set; }
 

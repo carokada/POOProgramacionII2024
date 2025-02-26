@@ -6,7 +6,7 @@ namespace EntidadesCs
 {
    public class Marca
    {
-      public string nombre;
+      private string nombre;
 
       public Marca (string nombre)
       {

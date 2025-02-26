@@ -1,0 +1,8 @@
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\bin\Debug\netstandard1.4\EntidadesCs.deps.json
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\bin\Debug\netstandard1.4\EntidadesCs.dll
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\bin\Debug\netstandard1.4\EntidadesCs.pdb
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\obj\Debug\netstandard1.4\EntidadesCs.csprojAssemblyReference.cache
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\obj\Debug\netstandard1.4\EntidadesCs.csproj.CoreCompileInputs.cache
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\obj\Debug\netstandard1.4\EntidadesCs.AssemblyInfo.cs
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\obj\Debug\netstandard1.4\EntidadesCs.dll
+C:\N10\Programacion II\26. Otros\TravelAgent\TravelAgent\EntidadesCs\obj\Debug\netstandard1.4\EntidadesCs.pdb

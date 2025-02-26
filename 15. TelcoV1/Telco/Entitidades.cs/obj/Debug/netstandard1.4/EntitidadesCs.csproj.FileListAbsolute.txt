@@ -1,0 +1,8 @@
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\bin\Debug\netstandard1.4\EntitidadesCs.deps.json
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\bin\Debug\netstandard1.4\EntitidadesCs.dll
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\bin\Debug\netstandard1.4\EntitidadesCs.pdb
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\obj\Debug\netstandard1.4\EntitidadesCs.csprojAssemblyReference.cache
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\obj\Debug\netstandard1.4\EntitidadesCs.csproj.CoreCompileInputs.cache
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\obj\Debug\netstandard1.4\EntitidadesCs.AssemblyInfo.cs
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\obj\Debug\netstandard1.4\EntitidadesCs.dll
+C:\N10\Programacion II\15. TelcoV1\Telco\Entitidades.cs\obj\Debug\netstandard1.4\EntitidadesCs.pdb

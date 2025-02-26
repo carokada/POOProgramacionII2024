@@ -1,0 +1,8 @@
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\bin\Debug\netstandard1.4\EntitiesCs.deps.json
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\bin\Debug\netstandard1.4\EntitiesCs.dll
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\bin\Debug\netstandard1.4\EntitiesCs.pdb
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\obj\Debug\netstandard1.4\EntitiesCs.csprojAssemblyReference.cache
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\obj\Debug\netstandard1.4\EntitiesCs.csproj.CoreCompileInputs.cache
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\obj\Debug\netstandard1.4\EntitiesCs.AssemblyInfo.cs
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\obj\Debug\netstandard1.4\EntitiesCs.dll
+C:\N10\Programacion II\24. Banco\copiaTutorialesYT\BancoYT\EntitiesCs\obj\Debug\netstandard1.4\EntitiesCs.pdb

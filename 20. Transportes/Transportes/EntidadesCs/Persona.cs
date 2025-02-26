@@ -1,0 +1,38 @@
+﻿using System;
+
+namespace EntidadesCs
+{
+   public abstract class Persona
+   {
+      // lista movimientos
+
+      public string dni;
+      public string nombre;
+
+      public Persona(string dni, string nombre)
+      {
+         Dni = dni;
+         Nombre = nombre;
+      }
+
+      public string Dni
+      {
+         get => dni;
+         set => dni = (value.Length > 0 && value.Length <= 8) ? value : throw new ArgumentException(" el dni no cumple con los requerimientos del campo.");
+      }
+
+      public string Nombre
+      {
+         get => nombre;
+         set => nombre = (value.Length > 0 && value.Length <= 30) ? value : throw new ArgumentException(" el nombre no cumple con los requerimientos del campo");
+      }
+
+      // public static ?? GetMovimientos() ?? de que ?? 
+
+      public override string ToString()
+      {
+         return $"[{Dni}] {Nombre}";
+      }
+   }
+}
+

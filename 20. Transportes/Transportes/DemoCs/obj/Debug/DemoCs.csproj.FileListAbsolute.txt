@@ -1,0 +1,10 @@
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\bin\Debug\DemoCs.exe.config
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\bin\Debug\DemoCs.exe
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\bin\Debug\DemoCs.pdb
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\bin\Debug\EntidadesCs.dll
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\bin\Debug\EntidadesCs.pdb
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\obj\Debug\DemoCs.csprojAssemblyReference.cache
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\obj\Debug\DemoCs.csproj.CoreCompileInputs.cache
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\obj\Debug\DemoCs.csproj.CopyComplete
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\obj\Debug\DemoCs.exe
+C:\N10\Programacion II\20. Transportes\Transportes\DemoCs\obj\Debug\DemoCs.pdb
